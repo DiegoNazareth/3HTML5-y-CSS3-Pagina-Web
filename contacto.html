@@ -21,22 +21,74 @@
       </div>
     </header>
     <main>
-    <form >
+      <form>
         <label for="nombreapellido">Nombre y Apellido</label>
-        <input type="text" id="nombreapellido">
+        <input type="text" id="nombreapellido" class="input-padron" />
 
         <label for="correoelectronico">Correo Electronico</label>
-        <input type="text" id="correoelectronico">
+        <input type="text" id="correoelectronico" class="input-padron" />
 
         <label for="telefono">Telefono</label>
-        <input type="text" id="telefono">
+        <input type="text" id="telefono" class="input-padron" />
 
-        <input type="submit" value="Enviar Formulario">
-    </form>
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="70"
+          rows="10"
+          class="input-padron"
+        ></textarea>
+
+        <div>
+          <p>Como le gustaria que le contactemos?</p>
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="Contacto"
+              value="email"
+              id="radio-email"
+            />Email</label
+          >
+
+          <label for="radio-telefono"
+            ><input
+              type="radio"
+              name="Contacto"
+              value="telefono"
+              id="radio-telefono"
+            />Telefono</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="Contacto"
+              value="whatsapp"
+              id="radio-whatsapp"
+            />WhatsApp</label
+          >
+        </div>
+        <div>
+          <p>En cual horario prefiere ser atendido?</p>
+          <select name="" id="">
+            <option value="">Manana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </div>
+
+        <label for="" class="checkbox"
+          ><input type="checkbox" name="" id="" />Le gustaria recibir novedades
+          de la Barberia Alura?</label
+        >
+        <input type="submit" value="Enviar Formulario" />
+      </form>
     </main>
     <footer>
-        <img src="./imagenes/imagenes/logo-blanco.png" alt="">
-        <p class="copyright">&#169;Copyright Barberia Alura - 2020</p>
+      <img src="./imagenes/imagenes/logo-blanco.png" alt="" />
+      <p class="copyright">&#169;Copyright Barberia Alura - 2020</p>
     </footer>
   </body>
 </html>
